@@ -1,0 +1,69 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>chg-requests</display-name>
+  <listener>
+  	<listener-class>es.chg.portal.requests.listener.AppContextListener</listener-class>
+  </listener>
+  <servlet>
+  	<servlet-name>OOConfigXMLServlet</servlet-name>
+  	<display-name>OOConfigXMLServlet</display-name>
+  	<servlet-class>es.chg.portal.requests.servlet.OOConfigXMLServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadTemplateServlet</servlet-name>
+  	<display-name>DownloadTemplateServlet</display-name>
+  	<description></description>
+  	<servlet-class>es.chg.portal.requests.servlet.DownloadTemplateServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OOUploadFileServlet</servlet-name>
+  	<display-name>OOUploadFileServlet</display-name>
+  	<description></description>
+  	<servlet-class>es.chg.portal.requests.servlet.OOUploadFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadRequestDocServlet</servlet-name>
+  	<display-name>DownloadRequestDocServlet</display-name>
+  	<description></description>
+  	<servlet-class>es.chg.portal.requests.servlet.DownloadRequestDocServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RequestActionsServlet</servlet-name>
+  	<display-name>RequestActionsServlet</display-name>
+  	<description></description>
+  	<servlet-class>es.chg.portal.requests.servlet.RequestActionsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>es.chg.portal.requests.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>OOConfigXMLServlet</servlet-name>
+  	<url-pattern>/OOConfigXMLServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadTemplateServlet</servlet-name>
+  	<url-pattern>/DownloadTemplateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OOUploadFileServlet</servlet-name>
+  	<url-pattern>/OOUploadFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadRequestDocServlet</servlet-name>
+  	<url-pattern>/DownloadRequestDocServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RequestActionsServlet</servlet-name>
+  	<url-pattern>/RequestActionsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
