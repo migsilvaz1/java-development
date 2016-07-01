@@ -1,4 +1,4 @@
-package es.babel.controller;
+package es.babel.schedule;
 
 import java.util.ResourceBundle;
 
@@ -43,13 +43,11 @@ public class AppController {
 
 	@RequestMapping(value = "/listado", method = RequestMethod.GET)
 	public String dataModelList(Model model) {
-		log.info("LIST");
 		return "list";
 	}
 	
 	@RequestMapping(value = "/listado", method = RequestMethod.POST)
 	public String dataModelAdd(HttpServletRequest request, Model model) {
-		log.info("CREATE");
 		Integer userId = Integer.valueOf(request.getParameter("userId"));
 		Integer groupId = Integer.valueOf(request.getParameter("groupId"));
 		Boolean privateLayout = Boolean.valueOf(request.getParameter("privateLayout"));
